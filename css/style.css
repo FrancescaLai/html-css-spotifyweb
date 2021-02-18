@@ -3,3 +3,44 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body{
+  height: 100vh;
+}
+
+main{
+  height: calc(100% - 100px);
+  background-color: #141922;
+}
+
+aside{
+  height: 100%;
+  width: 200px;
+  background-color: #000;
+}
+
+.logo{
+  display: flex;
+  align-items: center;
+}
+
+.logo .fa-spotify{
+  color: #fff;
+  font-size: 40px;
+  padding: 10px;
+}
+
+.logo span{
+  color: #fff;
+  font-size: 20px;
+}
+
+
+.artist-container{
+
+}
+
+footer{
+  height: 100px;
+  background-color: #282828;
+}
