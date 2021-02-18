@@ -18,6 +18,9 @@ aside{
   height: 100%;
   width: 200px;
   background-color: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 /* Mix */
@@ -29,20 +32,12 @@ aside{
   color: #7D7F84;
   font-weight: bold;
 }
+
 .row{
   display: flex;
   align-items: center;
 }
 
-.column{
-  display: flex;
-  flex-direction: column;
-  margin-top: 10px;
-}
-
-.column p{
-  padding: 8px;
-}
 /* Mix */
 
 /* Logo */
@@ -54,16 +49,16 @@ aside{
 .logo .fa-spotify{
   color: #fff;
   font-size: 40px;
-  padding: 20px;
+  padding: 10px;
 }
 
-.logo p{
+.logo .logo-text{
   color: #fff;
   font-size: 20px;
 }
 /* /Logo */
 
-/* Navbar */
+/* Top + Central Navbar */
 .top-nav{
   margin-left: 13px;
 }
@@ -72,34 +67,54 @@ aside{
   width: 45px;;
 }
 
-.top-nav p{
+.top-nav p,
+.central-nav p,
+.bottom-nav p{
   font-size: 14px;
 }
 
 .top-nav h4{
-  padding: 10px 10px;
+  margin: 10px 0px;
 }
 
-.top-nav .fa-plus{
+.central-nav,
+.bottom-nav{
+  margin-left: 15px;
+}
+
+.central-nav .fa-plus{
   font-size: 20px;
   color: #000;
   background-color: #D2D2D2;
   padding: 10px;
-  margin: 0px 10px;
+  margin-right: 10px;
+}
+
+.column{
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.column p{
+  padding-bottom: 7px;
+}
+/* /Top + Central Navbar */
+
+/* Bottom Navbar */
+.bottom-nav{
+
+}
+
+.bottom-nav .fa-arrow-circle-down{
+  padding-left: 10px;
+  margin-right: 10px;
 }
 
 
 
 
-/* /Navbar */
-
-
-
-.artist-container{
-
-}
-
-
+/* Bottom Navbar */
 
 
 
