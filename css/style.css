@@ -12,6 +12,8 @@ body{
 main{
   height: calc(100% - 80px);
   background-color: #141922;
+  display: flex;
+  width: 100%;
 }
 
 aside{
@@ -30,7 +32,7 @@ aside{
   font-weight: bold;
 }
 .grey-txt{
-  color: #7D7F84;
+  color: #717171;
   font-weight: bold;
 }
 
@@ -116,11 +118,111 @@ hr{
 .bottom-nav .row:last-of-type{
   margin-bottom: 10px;
 }
-
-
-
-
 /* Bottom Navbar */
+
+/* Main Content */
+.main-content{
+  width: calc(100% - 200px);
+}
+
+.banner{
+  display: flex;
+  justify-content: flex-end;
+  background-color: rgba(8, 11, 18, 0.5);
+}
+
+.main-content .btn{
+  margin: 20px 5px;
+  background-color: rgba(8, 11, 18, 0.5);
+  border: 1px solid white;
+  font-size: 10px;
+  padding: 10px 20px;
+  border-radius: 15px;
+}
+
+.categories{
+  text-align: center;
+  margin-top: 15px;
+}
+
+.categories li{
+  padding: 8px;
+  color: #7D7F84;
+  font-weight: bold;
+  font-size: 15px;
+  display: inline-block;
+}
+
+.underline::after {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 2px;
+  background-color: #ADFF2F;
+  margin: auto;
+  margin-top: 2px;
+}
+
+.container{
+  margin-left: 10px;
+}
+
+.artist-container{
+  display: flex;
+  margin-top: 15px;
+}
+
+.container .artist{
+  margin-top: 15px;
+  padding: 15px;
+}
+
+.artist-box{
+  width: 150px;
+  height: 150px;
+  position: relative;
+  margin-right: 15px;
+  text-align: center;
+}
+
+.artist-img{
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.artist-play{
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: none;
+}
+
+.artist-play .fa-play-circle{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 50px;
+}
+
+.artist-box:hover .artist-play{
+  display: block;
+  cursor: pointer;
+}
+
+.artist-box p{
+  font-size: 12px;
+  color: #7D7F84;
+  margin-top: 5px;
+}
+
+
+
+/* /Main Content */
 
 
 
