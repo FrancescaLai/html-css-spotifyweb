@@ -21,6 +21,7 @@ aside{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  overflow: auto;
 }
 
 /* Mix */
@@ -102,13 +103,18 @@ aside{
 /* /Top + Central Navbar */
 
 /* Bottom Navbar */
-.bottom-nav{
-
-}
-
-.bottom-nav .fa-arrow-circle-down{
+.bottom-nav .fa-arrow-circle-down,
+.bottom-nav .fa-user{
   padding-left: 10px;
   margin-right: 10px;
+}
+
+hr{
+  margin: 5px 20px 5px 10px;
+}
+
+.bottom-nav .row:last-of-type{
+  margin-bottom: 10px;
 }
 
 
