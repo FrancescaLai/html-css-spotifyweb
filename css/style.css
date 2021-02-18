@@ -6,10 +6,11 @@
 
 body{
   height: 100vh;
+  font-family: 'Roboto', sans-serif;
 }
 
 main{
-  height: calc(100% - 100px);
+  height: calc(100% - 80px);
   background-color: #141922;
 }
 
@@ -19,6 +20,32 @@ aside{
   background-color: #000;
 }
 
+/* Mix */
+.white-txt{
+  color: #fff;
+  font-weight: bold;
+}
+.grey-txt{
+  color: #7D7F84;
+  font-weight: bold;
+}
+.row{
+  display: flex;
+  align-items: center;
+}
+
+.column{
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.column p{
+  padding: 8px;
+}
+/* Mix */
+
+/* Logo */
 .logo{
   display: flex;
   align-items: center;
@@ -27,20 +54,60 @@ aside{
 .logo .fa-spotify{
   color: #fff;
   font-size: 40px;
-  padding: 10px;
+  padding: 20px;
 }
 
-.logo span{
+.logo p{
   color: #fff;
   font-size: 20px;
 }
+/* /Logo */
+
+/* Navbar */
+.top-nav{
+  margin-left: 13px;
+}
+
+.top-nav img{
+  width: 45px;;
+}
+
+.top-nav p{
+  font-size: 14px;
+}
+
+.top-nav h4{
+  padding: 10px 10px;
+}
+
+.top-nav .fa-plus{
+  font-size: 20px;
+  color: #000;
+  background-color: #D2D2D2;
+  padding: 10px;
+  margin: 0px 10px;
+}
+
+
+
+
+/* /Navbar */
+
 
 
 .artist-container{
 
 }
 
+
+
+
+
+
+
+/* Footer */
 footer{
-  height: 100px;
+  height: 80px;
   background-color: #282828;
 }
+/* 7Footer */
