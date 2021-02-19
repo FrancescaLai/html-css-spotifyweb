@@ -123,11 +123,15 @@ hr{
 .main-content{
   width: calc(100% - 200px);
 }
-
+/* Banner */
 .banner{
   display: flex;
   justify-content: flex-end;
   background-color: rgba(8, 11, 18, 0.5);
+  /* position: fixed;
+  top: 0;
+  right: 0px;
+  left: 200px; */
 }
 
 .main-content .btn{
@@ -138,8 +142,10 @@ hr{
   padding: 10px 20px;
   border-radius: 15px;
 }
-
-.bottom-content{
+/* /Banner */
+/* Inner-content */
+.inner-content{
+  height: calc(100% - 80px);
   overflow: auto;
 }
 
@@ -168,16 +174,16 @@ hr{
 
 .container{
   margin-left: 10px;
+  margin-top: 100px;
 }
 
-.artist-container{
+.container:first-of-type{
+  margin-top: 0px;
+}
+
+.carousel{
   display: flex;
   margin-top: 15px;
-}
-
-.container .artist{
-  margin-top: 15px;
-  padding: 15px;
 }
 
 .artist-box{
@@ -217,13 +223,20 @@ hr{
   cursor: pointer;
 }
 
-.artist-box p{
-  font-size: 12px;
+.container p{
+  font-size: 10px;
+  font-weight: bold;
   color: #7D7F84;
   margin-top: 5px;
 }
 
+.container .circle{
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+}
 
+/* /Inner Content */
 /* /Main Content */
 
 
