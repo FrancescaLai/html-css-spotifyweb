@@ -187,16 +187,15 @@ hr{
   margin-top: 15px;
 }
 
-.artist-box{
-  width: 150px;
-  height: 150px;
+.artist-album{
   position: relative;
   margin-right: 15px;
   text-align: center;
 }
 
 .artist-img{
-  width: 100%;
+  width: 150px;
+  height: 150px;
   margin-bottom: 10px;
 }
 
@@ -205,7 +204,7 @@ hr{
   position: absolute;
   top: 0;
   left: 0;
-  bottom: 0;
+  bottom: 14px;
   right: 0;
   display: none;
 }
@@ -219,7 +218,7 @@ hr{
   font-size: 50px;
 }
 
-.artist-box:hover .overlay{
+.artist-album:hover .overlay{
   display: block;
   cursor: pointer;
 }
@@ -244,12 +243,45 @@ hr{
 /* /Inner Content */
 /* /Main Content */
 
-
-
-
 /* Footer */
 footer{
   height: 80px;
   background-color: #282828;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
 }
-/* 7Footer */
+
+.footer-left{
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.footer-left img{
+  width: 40px;
+  margin-right: 10px;
+}
+
+.artist-playing{
+  margin-right: 30px;
+}
+
+.footer-left .fa-heart,
+.footer-left .fa-folder{
+  font-size: 15px;
+  color: #666666;
+  padding: 10px;
+}
+
+.footer .player-control{
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+
+
+/* /Footer */
