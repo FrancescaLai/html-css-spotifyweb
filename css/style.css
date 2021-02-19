@@ -22,7 +22,7 @@ aside{
   background-color: #000;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 
 /* Mix */
@@ -31,7 +31,7 @@ aside{
   font-weight: bold;
 }
 .grey-txt{
-  color: #717171;
+  color: #666666;
   font-weight: bold;
 }
 
@@ -40,6 +40,9 @@ aside{
   align-items: center;
 }
 
+aside p{
+  font-size: 14px;
+}
 /* Mix */
 
 /* Logo */
@@ -49,43 +52,30 @@ aside{
 }
 
 .logo .fa-spotify{
-  color: #fff;
   font-size: 40px;
   padding: 10px;
 }
 
 .logo .logo-text{
-  color: #fff;
   font-size: 20px;
 }
 /* /Logo */
 
-/* Top + Central Navbar */
+/* Top Navbar */
 .top-nav{
   margin-left: 13px;
 }
 
 .top-nav img{
-  width: 45px;;
+  width: 45px;
 }
+/* /Top Navbar */
 
-.top-nav p,
-.central-nav p,
-.bottom-nav p{
-  font-size: 14px;
-}
-
-.top-nav h4{
-  margin: 10px 0px;
-}
-
+/* Central Navbar */
 .central-nav{
   margin-left: 24px;
   overflow: auto;
-}
-
-.bottom-nav{
-  margin-left: 15px;
+  margin-top: 15px;
 }
 
 .central-nav .fa-plus{
@@ -102,16 +92,22 @@ aside{
   margin-top: 10px;
 }
 
-.column p{
+.column li{
   padding-bottom: 7px;
 }
-/* /Top + Central Navbar */
+/* /Central Navbar */
 
 /* Bottom Navbar */
+.bottom-nav{
+  margin-left: 15px;
+  margin-top: auto;
+}
+
 .bottom-nav .fa-arrow-circle-down,
 .bottom-nav .fa-user{
   padding-left: 10px;
   margin-right: 10px;
+  font-size: 12px;
 }
 
 hr{
@@ -121,7 +117,7 @@ hr{
 .bottom-nav .row:last-of-type{
   margin-bottom: 10px;
 }
-/* Bottom Navbar */
+/* /Bottom Navbar */
 
 /* Main Content */
 .main-content{
