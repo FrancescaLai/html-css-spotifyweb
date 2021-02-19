@@ -25,6 +25,10 @@ aside{
   justify-content: flex-start;
 }
 
+a{
+  text-decoration: none;
+}
+
 /* Mix */
 .white-txt{
   color: #fff;
@@ -141,7 +145,14 @@ hr{
   font-size: 10px;
   padding: 10px 20px;
   border-radius: 15px;
+  transition: transform 0.5s;
 }
+
+.upgrade-btn:hover{
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
 /* /Banner */
 /* Inner-content */
 .inner-content{
@@ -284,8 +295,40 @@ footer{
   flex-direction: column;
 }
 
+.play-button a{
+  font-size: 18px;
+  padding: 10px;
+}
 
+.play-bar{
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+}
 
+.play-bar a{
+  font-size: 10px;
+  padding: 5px;
+}
 
+.bar{
+  height: 4px;
+  width: 100%;
+  background-color: #fff;
+}
+
+.footer-right{
+ display: flex;
+ align-items: center;
+ margin-right: 10px;
+}
+
+.footer-right a{
+  padding: 5px;
+}
+
+.footer-right .bar{
+  width: 60px;
+}
 
 /* /Footer */
