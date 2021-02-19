@@ -187,9 +187,13 @@ hr{
   margin-top: 15px;
 }
 
+.artist-box{
+  text-align: center;
+  margin-right: 15px;
+}
+
 .artist-album{
   position: relative;
-  margin-right: 15px;
   text-align: center;
 }
 
