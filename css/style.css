@@ -47,6 +47,12 @@ a{
 aside p{
   font-size: 14px;
 }
+
+aside p:hover,
+.column li:hover{
+  color: #fff;
+  cursor: pointer;
+}
 /* Mix */
 
 /* Logo */
@@ -88,6 +94,10 @@ aside p{
   background-color: #D2D2D2;
   padding: 10px;
   margin-right: 10px;
+}
+
+.central-nav .fa-plus:hover{
+  background-color: #fff;
 }
 
 .column{
@@ -138,7 +148,7 @@ hr{
   left: 200px; */
 }
 
-.main-content .btn{
+.main-content .upgrade-btn{
   margin: 20px 5px;
   background-color: rgba(8, 11, 18, 0.5);
   border: 1px solid white;
@@ -152,8 +162,8 @@ hr{
   transform: scale(1.05);
   cursor: pointer;
 }
-
 /* /Banner */
+
 /* Inner-content */
 .inner-content{
   height: calc(100% - 80px);
@@ -181,6 +191,11 @@ hr{
   background-color: #ADFF2F;
   margin: auto;
   margin-top: 2px;
+}
+
+.categories li:hover{
+  color: #fff;
+  cursor: pointer;
 }
 
 .container{
@@ -290,6 +305,16 @@ footer{
   padding: 10px;
 }
 
+.footer-left .fa-heart:hover,
+.footer-left .fa-folder:hover{
+  color: #fff;
+}
+
+.footer-left p:hover{
+  text-decoration: underline;
+  color: #fff;
+}
+
 .footer .player-control{
   display: flex;
   flex-direction: column;
@@ -298,6 +323,10 @@ footer{
 .play-button a{
   font-size: 18px;
   padding: 10px;
+}
+
+.fa-play-circle:hover{
+  transform: scale(1.3);
 }
 
 .play-bar{
