@@ -371,7 +371,23 @@ footer .fa-play-circle:hover{
 
 
 @media screen and (max-width: 589px){
-  .logo .logo-txt{
-
+  aside{
+    width: 60px;
+  }
+  .logo a:nth-child(even),
+  .top-nav .row a:nth-child(even),
+  .central-nav,
+  .bottom-nav .row a:nth-child(even),
+  .bottom-nav hr{
+    display: none;
+  }
+  .logo .fa-spotify{
+    font-size: 30px;
+  }
+  .top-nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0px;
   }
 }
