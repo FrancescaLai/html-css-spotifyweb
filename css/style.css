@@ -72,18 +72,19 @@ aside p:hover,
 /* /Logo */
 
 /* Top Navbar */
-.top-nav{
+.top-nav, .central-nav{
   margin-left: 13px;
 }
 
 .top-nav img{
-  width: 45px;
+  width: 20px;
+  padding-bottom: 8px;
+  margin-right: 5px;
 }
 /* /Top Navbar */
 
 /* Central Navbar */
 .central-nav{
-  margin-left: 24px;
   overflow: hidden;
   margin-top: 15px;
 }
@@ -113,13 +114,13 @@ aside p:hover,
 }
 
 .column li{
+  font-size: 14px;
   padding-bottom: 7px;
 }
 /* /Central Navbar */
 
 /* Bottom Navbar */
 .bottom-nav{
-  margin-left: 15px;
   margin-top: auto;
 }
 
@@ -206,7 +207,7 @@ hr{
 
 .container{
   margin-left: 10px;
-  margin-top: 80px;
+  margin-top: 40px;
 }
 
 .container:first-of-type{
@@ -334,7 +335,7 @@ footer{
 }
 
 .play-button a{
-  font-size: 18px;
+  font-size: 16px;
   padding: 10px;
 }
 
@@ -372,13 +373,13 @@ footer .fa-play-circle:hover{
 .footer-right .bar{
   width: 60px;
 }
-
 /* /Footer */
 
 
-@media screen and (max-width: 596px){
+/* Responsive <570px */
+@media screen and (max-width: 570px){
   aside{
-    width: 60px;
+    width: 45px;
   }
   .logo a:nth-child(even),
   .top-nav .row a:nth-child(even),
@@ -388,7 +389,7 @@ footer .fa-play-circle:hover{
     display: none;
   }
   .logo .fa-spotify{
-    font-size: 30px;
+    font-size: 25px;
   }
   .top-nav{
     display: flex;
@@ -396,18 +397,57 @@ footer .fa-play-circle:hover{
     align-items: center;
     margin-left: 0px;
   }
-  .footer-left .fa-heart,
-    .footer-left .fa-folder{
-      display: block;
-    }
+  .bottom-nav{
+    margin-left: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .main-content{
+    width: calc(100% - 45px);
+  }
+  .main-content h2{
+    font-size: 20px;
+  }
+  .inner-content li{
+    font-size: 12px;
+  }
+  .inner-content .carousel{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .carousel .artist-box{
+    width: 44%;
+    padding-bottom: 10px;
+  }
+  .footer-left img{
+    width: 30px;
+    margin-right: 5px;
+  }
   .like-save{
     display: flex;
     flex-direction: column;
   }
-}
-
-@media screen and (max-width: 554px){
-  .footer-right{
-    display: none;
+  .artist-playing{
+    font-size: 10px;
+    margin-right: 0;
   }
+  .like-save .fa-heart,
+  .like-save .fa-folder{
+    font-size: 10px;
+    padding: 5px;
+  }
+.footer-left, .footer-right{
+  width: 25%;
 }
+.footer-central{
+  width: 30%;
+  display: flex;
+  justify-content: center;
+}
+.play-button a{
+  font-size: 13px;
+  padding: 4px;
+}
+}
+/* /Responsive <570px */
