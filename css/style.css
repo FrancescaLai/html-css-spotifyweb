@@ -288,6 +288,7 @@ footer{
   justify-content: space-between;
   align-items: center;
   font-size: 12px;
+  flex-wrap: wrap;
 }
 
 .footer-left{
@@ -302,11 +303,16 @@ footer{
 }
 
 .artist-playing{
-  margin-right: 30px;
+  margin-right: 5px;
 }
 
-.footer-left .fa-heart,
-.footer-left .fa-folder{
+.like-save{
+  display: flex;
+  justify-content: space-between;
+}
+
+.like-save .fa-heart,
+.like-save .fa-folder{
   font-size: 15px;
   color: #666666;
   padding: 10px;
@@ -370,7 +376,7 @@ footer .fa-play-circle:hover{
 /* /Footer */
 
 
-@media screen and (max-width: 589px){
+@media screen and (max-width: 596px){
   aside{
     width: 60px;
   }
@@ -389,5 +395,19 @@ footer .fa-play-circle:hover{
     flex-direction: column;
     align-items: center;
     margin-left: 0px;
+  }
+  .footer-left .fa-heart,
+    .footer-left .fa-folder{
+      display: block;
+    }
+  .like-save{
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 554px){
+  .footer-right{
+    display: none;
   }
 }
