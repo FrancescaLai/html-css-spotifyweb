@@ -142,16 +142,15 @@ hr{
 /* Main Content */
 .main-content{
   width: calc(100% - 200px);
+  position: relative;
 }
 /* Banner */
 .banner{
   display: flex;
   justify-content: flex-end;
   background-color: rgba(8, 11, 18, 0.5);
-  /* position: fixed;
-  top: 0;
-  right: 0px;
-  left: 200px; */
+  position: absolute;
+  width: 100%;
 }
 
 .main-content .upgrade-btn{
@@ -172,8 +171,9 @@ hr{
 
 /* Inner-content */
 .inner-content{
-  height: calc(100% - 80px);
-  overflow: auto;
+  padding-top: 80px;
+  height: 100%;
+  overflow-y: auto;
 }
 
 .categories{
