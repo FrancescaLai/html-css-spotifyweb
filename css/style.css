@@ -409,7 +409,6 @@ footer .fa-play-circle:hover{
 .volume .fa-circle{
   animation-name: moving-circle;
   animation-duration: 1s;
-  animation-iteration-count: infinite;
 }
 
 @keyframes moving-circle {
@@ -552,3 +551,11 @@ footer .fa-play-circle:hover{
 }
 }
 /* /Responsive <600px */
+
+/* Responsive height <154px */
+@media screen and (max-height: 154px){
+  .banner{
+    display: none;
+  }
+}
+/* /Responsive height <154px */
