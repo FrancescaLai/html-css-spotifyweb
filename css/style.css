@@ -34,6 +34,7 @@ a{
   color: #fff;
   font-weight: bold;
 }
+
 .grey-txt{
   color: #666666;
   font-weight: bold;
@@ -72,7 +73,7 @@ aside p:hover,
 /* /Logo */
 
 /* Top Navbar */
-.top-nav, .central-nav{
+.top-nav, .central-nav, .bottom-nav{
   margin-left: 20px;
 }
 
@@ -126,7 +127,6 @@ aside p:hover,
 
 .bottom-nav .fa-arrow-circle-down,
 .bottom-nav .fa-user{
-  padding-left: 10px;
   margin-right: 10px;
   font-size: 12px;
 }
@@ -187,7 +187,6 @@ hr{
   padding: 8px;
   color: #7D7F84;
   font-weight: bold;
-  font-size: 15px;
   display: inline-block;
 }
 
@@ -229,12 +228,7 @@ hr{
 .artist-album{
   width: 100%;
   position: relative;
-  text-align: center;
   margin-bottom: 10px;
-}
-
-.circle-box.artist-box{
-  width: 150px;
 }
 
 .artist-img{
@@ -273,16 +267,21 @@ hr{
   margin-top: 5px;
 }
 
-.artist-img.circle{
+/* 3rd Carousel  */
+.circle-box.artist-box{
   width: 150px;
-  height: 150px;
+}
+
+.artist-img.circle{
+  width: 100%;
   border-radius: 100%;
-  background-color: #141922;
 }
 
 .overlay.overlay-circle{
   border-radius: 100%;
 }
+/* /3rd Carousel  */
+
 /* /Inner Content */
 /* /Main Content */
 
@@ -301,7 +300,7 @@ footer{
 .footer-left{
   display: flex;
   align-items: center;
-  margin-left: 10px;
+  padding-left: 10px;
 }
 
 .footer-left img{
@@ -313,16 +312,11 @@ footer{
   margin-right: 5px;
 }
 
-.like-save{
-  display: flex;
-  justify-content: space-between;
-}
-
 .like-save .fa-heart,
 .like-save .fa-folder{
   font-size: 15px;
   color: #666666;
-  padding: 10px;
+  padding: 5px;
 }
 
 .footer-left .fa-heart:hover,
@@ -333,11 +327,6 @@ footer{
 .footer-left p:hover{
   text-decoration: underline;
   color: #fff;
-}
-
-.footer .player-control{
-  display: flex;
-  flex-direction: column;
 }
 
 .play-button a{
@@ -423,9 +412,9 @@ footer .fa-play-circle:hover{
 }
 
 .footer-right{
- display: flex;
- align-items: center;
- margin-right: 10px;
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
 }
 
 .footer-right a{
@@ -519,7 +508,7 @@ footer .fa-play-circle:hover{
   }
   .footer-left img{
     width: 30px;
-    margin-right: 5px;
+    margin-right: 10px;
   }
   .like-save{
     display: flex;
@@ -527,7 +516,7 @@ footer .fa-play-circle:hover{
   }
   .artist-playing{
     font-size: 10px;
-    margin-right: 0;
+    padding-right: 3px;
   }
   .artist-box.circle-box{
     width: 150px;
@@ -537,11 +526,7 @@ footer .fa-play-circle:hover{
     font-size: 10px;
     padding: 5px;
   }
-.footer-left, .footer-right{
-  width: 25%;
-}
 .footer-central{
-  width: 30%;
   display: flex;
   justify-content: center;
 }
@@ -552,10 +537,10 @@ footer .fa-play-circle:hover{
 }
 /* /Responsive <600px */
 
-/* Responsive height <154px */
-@media screen and (max-height: 154px){
-  .banner{
+/* /Responsive <425px */
+@media screen and (max-width: 425px){
+  .volume .bar{
     display: none;
   }
 }
-/* /Responsive height <154px */
+/* /Responsive <425px */
