@@ -73,7 +73,7 @@ aside p:hover,
 
 /* Top Navbar */
 .top-nav, .central-nav{
-  margin-left: 13px;
+  margin-left: 20px;
 }
 
 .top-nav img{
@@ -94,7 +94,7 @@ aside p:hover,
 }
 
 .playlist-plus .fa-plus{
-  font-size: 20px;
+  font-size: 12px;
   color: #000;
   background-color: #D2D2D2;
   padding: 10px;
@@ -360,6 +360,14 @@ footer .fa-play-circle:hover{
   background-color: #fff;
 }
 
+.bar::after{
+  content: "";
+  display: block;
+  height: 4px;
+  width: 20%;
+  background-color: pink;
+}
+
 .footer-right{
  display: flex;
  align-items: center;
@@ -375,6 +383,34 @@ footer .fa-play-circle:hover{
 }
 /* /Footer */
 
+/* Responsive da 870px <980px */
+@media screen and (max-width: 908px){
+  .inner-content .carousel{
+    flex-wrap: wrap;
+  }
+  .carousel .artist-box{
+    margin-bottom: 10px;
+  }
+  .column li{
+    font-size: 12px;
+  }
+}
+/* /Responsive da 870px <980px */
+
+
+/* Responsive da 570px <870px */
+@media screen and (max-width: 870px){
+  .carousel .artist-box{
+    width: calc((100% / 2) - 20px);
+  }
+  .carousel:last-of-type{
+    justify-content: space-around;
+  }
+  .artist-box.circle-box{
+    width: 150px;
+  }
+}
+/* Responsive da 570px <870px */
 
 /* Responsive <570px */
 @media screen and (max-width: 570px){
@@ -431,6 +467,9 @@ footer .fa-play-circle:hover{
   .artist-playing{
     font-size: 10px;
     margin-right: 0;
+  }
+  .artist-box.circle-box{
+    width: 150px;
   }
   .like-save .fa-heart,
   .like-save .fa-folder{
