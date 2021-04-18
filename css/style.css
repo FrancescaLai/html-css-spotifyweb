@@ -60,11 +60,13 @@ aside p:hover,
 .logo{
   display: flex;
   align-items: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
 
 .logo .fa-spotify{
-  font-size: 40px;
-  padding: 10px;
+  font-size: 30px;
+  padding: 10px 10px 10px 0;
 }
 
 .logo .logo-text{
